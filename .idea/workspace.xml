@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a781caa-f497-46b9-8786-378e2254814d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qvmw30FZRgZYuvapfAsuTKIWZm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../DOTNET/identity/Remote/SSO" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a781caa-f497-46b9-8786-378e2254814d" name="Default Changelist" comment="" />
+      <created>1617968675458</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617968675458</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1370" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617968768520">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1370" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1617968768520" />
+    <state x="1696" y="455" key="FileChooserDialogImpl" timestamp="1620990531369">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1696" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1620990531369" />
+    <state x="1417" y="348" key="SettingsEditor" timestamp="1617968791322">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1417" y="348" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1617968791322" />
+  </component>
+</project>
