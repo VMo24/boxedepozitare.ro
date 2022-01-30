@@ -102,7 +102,7 @@ function getArticleStructure(index, imagine, titlu, p1, p2, id) {
 	    <h1>${titlu}</h1>
 	    <p>${p1}</p>
 	    <p>${p2}</p>
-	    <a href="/sfaturi/${id}">Citește mai mult</a>
+	    <a href="/sfaturi/${id}" title="${titlu}">Citește mai mult</a>
 </div>`;
 	return el.querySelector("div");
 }

@@ -208,21 +208,20 @@ app.get("/termeni-si-conditii", (req, res) => {
 	res.render("desktop/tc.ejs");
 });
 
-app.get("/spatii-de-depozitare-de-inchiriat-in-bucuresti-sector-6",(req,res)=>{
+app.get("/spatii-de-depozitare-de-inchiriat-in-bucuresti-sector-6", (req, res) => {
 	if (isMobile(req)) return res.render("mobile/spatiiSector6.ejs");
 	res.render("desktop/spatiiSector6.ejs");
 });
 
-app.get("/inchiriere-spatiu-de-depozitare-si-boxe-de-inchiriat",(req,res)=>{
+app.get("/inchiriere-spatiu-de-depozitare-si-boxe-de-inchiriat", (req, res) => {
 	if (isMobile(req)) return res.render("mobile/spatiuInchiriat.ejs");
 	res.render("desktop/spatiuInchiriat.ejs");
 });
 
-app.get("/boxa-depozitare-de-inchiriat-in-bucuresti",(req,res)=>{
+app.get("/boxa-depozitare-de-inchiriat-in-bucuresti", (req, res) => {
 	if (isMobile(req)) return res.render("mobile/inchiriatBucuresti.ejs");
 	res.render("desktop/inchiriatBucuresti.ejs");
 });
-
 
 app.post("/email", (req, res) => {
 	let obj = req.autosan.body;
@@ -235,7 +234,7 @@ app.post("/email", (req, res) => {
 	return res.redirect("back");
 });
 
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 app.listen(port, (err) => {
 	if (err) {

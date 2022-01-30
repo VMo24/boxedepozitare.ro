@@ -3,7 +3,7 @@ function getRelativeOffsetLeft(parent, child) {
 	child = child.getBoundingClientRect();
 	return Math.floor(child.left - parent.left);
 }
--11012021
+-11012021;
 function adjustDiscountGraphics() {
 	try {
 		let graphics = document.querySelector(".graphics");
@@ -53,7 +53,6 @@ window.addEventListener("resize", adjustDiscountGraphics);
 window.onbeforeunload = function () {
 	window.scrollTo(0, 0);
 };
-
 
 window.addEventListener("resize", () => {
 	if (window.innerWidth > 1455) {
@@ -164,7 +163,7 @@ window.addEventListener("scroll", scroll);
 
 let articleList = document.querySelectorAll("#slideshow .content");
 let lastIndex = articleList.length - 1;
-let hasNext=true;
+let hasNext = true;
 
 function bindPrevArticle() {
 	let currentArticle = document.querySelector("#slideshow .content.visible");
@@ -180,7 +179,7 @@ function bindNextArticle() {
 	let currentArticle = document.querySelector("#slideshow .content.visible");
 
 	if (getVisiblePosition() >= articleList.length - 2 && hasNext) {
-		axios.get(`/getNextArticle/${parseInt(currentArticle.querySelector("div.hide").textContent)+1}`).then((function (response) {
+		axios.get(`/getNextArticle/${parseInt(currentArticle.querySelector("div.hide").textContent) + 1}`).then(function (response) {
 			if (!response.data) {
 				let nextElement = currentArticle.nextElementSibling;
 				if (nextElement) {
@@ -188,11 +187,13 @@ function bindNextArticle() {
 					nextElement.classList.add("visible");
 				}
 				articleList = document.querySelectorAll("#slideshow .content");
-				hasNext=false;
+				hasNext = false;
 				return;
 			}
 			let continut = JSON.parse(response.data.continut);
-			document.querySelector("#slideshow").appendChild(getArticleStructure(lastIndex+1, response.data.imagine, continut.div[0].h2, continut.div[0].p, continut.div[1].p, response.data.id2));
+			document
+				.querySelector("#slideshow")
+				.appendChild(getArticleStructure(lastIndex + 1, response.data.imagine, continut.div[0].h2, continut.div[0].p, continut.div[1].p, response.data.id2));
 			lastIndex++;
 			let nextElement = currentArticle.nextElementSibling;
 			if (nextElement) {
@@ -200,7 +201,7 @@ function bindNextArticle() {
 				nextElement.classList.add("visible");
 			}
 			articleList = document.querySelectorAll("#slideshow .content");
-		}));
+		});
 	} else {
 		let nextElement = currentArticle.nextElementSibling;
 		if (nextElement) {
@@ -225,7 +226,7 @@ function getArticleStructure(index, imagine, titlu, p1, p2, id) {
 			<h1>${titlu}</h1>
 			<p>${p1}</p>
 			<p>${p2}</p>
-			<a href="/sfaturi/${id}">Citește mai mult</a>
+			<a href="/sfaturi/${id}" title="${titlu}">Citește mai mult</a>
 		</div>
 
 		<div class="image">

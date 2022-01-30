@@ -103,7 +103,7 @@ html {
 	background: #fff;
 }
 
-main li{
+main li {
 	list-style: none;
 	font-size: inherit;
 	font-weight: inherit;
@@ -140,7 +140,7 @@ nav img {
 	top: 50%;
 	width: 179px;
 	transform: translateY(-50%);
-	cursor:pointer;
+	cursor: pointer;
 }
 
 /*Menu*/
@@ -219,31 +219,33 @@ nav ul li a {
 .dropdown {
 	position: relative;
 	display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 140px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
-    height: max-content;
+	height: max-content;
 	padding-top: 5px;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
 	display: block;
-  }
+}
 
 /*------------------------------------------------------------------------*/
 
@@ -381,7 +383,7 @@ footer .info .date-companie ul li {
 	margin: 6px 0 6px 0;
 }
 
-footer .info h5 {
+footer .info h4 {
 	font-weight: 700;
 	line-height: 1.375rem;
 	color: #22262e;
@@ -407,7 +409,7 @@ footer .info .locatii p:first-of-type {
 }
 
 footer .info .locatii,
-footer .info .date-companie{
+footer .info .date-companie {
 	margin: 0 8px;
 }
 
@@ -425,10 +427,6 @@ footer .info {
 	justify-content: space-between;
 	margin-top: 42px;
 }
-
-
-
-
 
 footer .other img {
 	height: 48px;
@@ -521,8 +519,8 @@ main section {
 }
 
 form label {
-    opacity: 0;
-    position: absolute;
+	opacity: 0;
+	position: absolute;
 }
 
 .oneLine {
@@ -533,40 +531,40 @@ form label {
 	line-height: inherit;
 }
 
-.anchor_highlight{
-	color:#336bd7;
+.anchor_highlight {
+	color: #336bd7;
 	text-decoration: underline;
 	font-weight: 600;
 }
 
-#cookie-prompt{
-    pointer-events: none;
-    position: fixed;
-    width: 1140px;
-    top: 100vh;
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
-    align-items: center;
-    z-index: 50;
-    background: #447ae300;
-    border-radius: 5px;
-    color: #fff;
+#cookie-prompt {
+	pointer-events: none;
+	position: fixed;
+	width: 1140px;
+	top: 100vh;
+	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
+	align-items: center;
+	z-index: 50;
+	background: #447ae300;
+	border-radius: 5px;
+	color: #fff;
 	padding: 20px;
 	padding-bottom: 40px;
 	box-shadow: 0px 10px 20px #447ae34d;
 	backdrop-filter: blur(10px);
 }
 
-#cookie-prompt h4{
-    color: #fff;
-    line-height: 3.063rem;
-    font-size: 1.5rem;
-    margin-bottom: 18px;
-    font-weight: 900;
+#cookie-prompt h4 {
+	color: #fff;
+	line-height: 3.063rem;
+	font-size: 1.5rem;
+	margin-bottom: 18px;
+	font-weight: 900;
 }
 
-#cookie-prompt p{
+#cookie-prompt p {
 	max-width: 810px;
 	line-height: 1.313rem;
 	font-size: 1rem;
@@ -574,49 +572,50 @@ form label {
 	color: #fff;
 }
 
-#cookie-prompt p:last-of-type{margin-bottom: unset;}
+#cookie-prompt p:last-of-type {
+	margin-bottom: unset;
+}
 
-#cookie-prompt a{
+#cookie-prompt a {
 	font-size: 1rem;
 	color: #fff;
 	font-weight: 600;
 }
 
-#cookie-prompt button{
+#cookie-prompt button {
 	position: absolute;
-    bottom: 20px;
-    right: 20px;
+	bottom: 20px;
+	right: 20px;
 }
 
-@keyframes flyIn{
-    100%{
+@keyframes flyIn {
+	100% {
 		pointer-events: unset;
 		top: calc(100vh - 50px - 200px);
 		background: #447ae3dd;
 	}
 }
 
-@keyframes flyOut{
-	0%{	
+@keyframes flyOut {
+	0% {
 		pointer-events: unset;
 		top: calc(100vh - 50px - 200px);
 		background: #447ae3dd;
 	}
-    100%{
-		top:100vh;
-		opacity:0;
+	100% {
+		top: 100vh;
+		opacity: 0;
 		pointer-events: none;
 	}
 }
 
-.cookie-visible{
-	animation: flyIn .7s forwards 0s ease-out;
+.cookie-visible {
+	animation: flyIn 0.7s forwards 0s ease-out;
 }
 
-.cookie-hidden{
-	animation: flyOut .7s forwards 0s ease-out;
+.cookie-hidden {
+	animation: flyOut 0.7s forwards 0s ease-out;
 }
-
 
 @media only screen and (max-width: 1350px) {
 	nav ul li {
@@ -631,91 +630,90 @@ form label {
 }
 
 @media only screen and (max-width: 1170px) {
-	main{
+	main {
 		margin-left: 10px;
 	}
-	}
+}
 
-
-#popup-background.checked{
-	display:none;
+#popup-background.checked {
+	display: none;
 	pointer-events: none;
 }
 
-#popup-background{
-	position:fixed;
-	top:0;
+#popup-background {
+	position: fixed;
+	top: 0;
 	width: 100vw;
 	height: 100vh;
 	z-index: 100;
-	background:rgba(0, 0, 0, .5)
+	background: rgba(0, 0, 0, 0.5);
 }
 
-#form-popup{
-	background:#fff;
+#form-popup {
+	background: #fff;
 	border-radius: 10px;
 	width: 600px;
 	height: 750px;
-	top:50%;
-	left:50%;
-	transform: translate(-50%,-50%);
-	padding:0 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 20px;
 	position: relative;
 }
-#form-popup img{
+#form-popup img {
 	width: 80%;
 	margin: 20px auto 0 auto;
-	display:block;
+	display: block;
 }
 
-#form-popup h1{
+#form-popup h1 {
 	text-align: center;
 	font-weight: 900;
 	font-size: 2rem;
-	margin-top:60px;
+	margin-top: 60px;
 	line-height: 3.125rem;
 	margin-bottom: 20px;
 }
 
-#form-popup p{
+#form-popup p {
 	color: #252a4b;
-    font-size: 1rem;
-    line-height: 1.375rem;
+	font-size: 1rem;
+	line-height: 1.375rem;
 	text-align: center;
 }
 
-#form-popup button{
+#form-popup button {
 	position: absolute;
 	bottom: 20px;
-	left:50%;
-	transform:translateX(-50%)
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-#form-popup a{
+#form-popup a {
 	text-decoration: none;
 }
 
-#form-popup #popup-phone{
-	margin-top:20px;
+#form-popup #popup-phone {
+	margin-top: 20px;
 	font-weight: 600;
 	font-size: 1.4rem;
 	color: #647483;
 }
 
-#form-popup #errorIcon{
-	margin:0 auto;
-	background:#fc6600;
-	padding:15px;
+#form-popup #errorIcon {
+	margin: 0 auto;
+	background: #fc6600;
+	padding: 15px;
 	width: max-content;
 	border-radius: 100px;
 	position: relative;
-	top:20px;
+	top: 20px;
 }
-#form-popup #errorIcon span{
-	color:#fff;
+#form-popup #errorIcon span {
+	color: #fff;
 	font-size: 5rem;
 }
 
-#form-popup.error{
+#form-popup.error {
 	height: 500px;
 }

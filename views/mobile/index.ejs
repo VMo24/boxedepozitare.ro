@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Căutați un loc unde să vă păstrați lucrurile pentru o vreme? Sau căutați o soluție de depozitare permanentă? BoxeDepozitare.ro va ofera contracte de inchiriere pe termen lung sau permanent, la preturi avantajoase.">
+        content="Căuți un loc unde să păstrezi lucrurile pt. o vreme? Sau căutați o soluție de depozitare permanentă? Va oferim boxe si spatii depozitare de inchiriat !">
     <title>Boxe-Depozitare.ro</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -84,8 +84,8 @@
     <link rel="preload" href="/fonts/AvenirNextLTPro-Medium.otf" as="font" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/icons/icons26042021.css">
-    <link rel="stylesheet" href="/mobile/stylesheets/partials-25042021.css">
-    <link rel="stylesheet" href="/mobile/stylesheets/index-12042021.css">
+    <link rel="stylesheet" href="/mobile/stylesheets/partials-30012022.css">
+    <link rel="stylesheet" href="/mobile/stylesheets/index-30012022.css">
 </head>
 
 <body onload="bindObservers()">
@@ -98,7 +98,7 @@
             <%-include('partials/formConfirm.ejs')%>
                 <main>
                     <div id="whatsapp">
-                        <a href="https://api.whatsapp.com/send?phone=+40767676712"><img src="/images/wapp.webp"
+                        <a href="https://api.whatsapp.com/send?phone=+40767676712" title="Scrie-ne pe whastapp"><img src="/images/wapp.webp"
                                 width="56" height="56"
                                 alt="Buton care duce catre whatsapp-ul nostru / A button to our whatsapp"></a>
                     </div>
@@ -159,10 +159,10 @@
                             lucruri personale. Putem chiar oferi și 2 sau mai multe boxe una lângă cealaltă, fără pereți
                             despărțitori.
                         </p>
-                        <p>Vrei să știi cine suntem? <a class="anchor_highlight"
+                        <p>Vrei să știi cine suntem? <a class="anchor_highlight" title="Interviuri savemob"
                                 href="https://www.savemob.ro/interviuri/">Click aici</a> ca să ne cunoști mai bine!
                         </p>
-                        <a href="https://api.whatsapp.com/send?phone=+40767676712"><button
+                        <a href="https://api.whatsapp.com/send?phone=+40767676712" title="Scrie-ne pe whatsapp"><button
                                 class="action-button">Contactează-ne</button></a>
 
 
@@ -339,7 +339,7 @@
                                         <div class="disabled"></div>
                                     </div>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=+40767676712"><button
+                                <a href="https://api.whatsapp.com/send?phone=+40767676712" title="Scrie-ne pe whastapp"><button
                                         class="action-button">Contactează-ne</button></a>
                             </div>
 
@@ -368,7 +368,7 @@
                                 imediat spatiul.</li>
                         </ul>
                         </p>
-                        <a href="https://api.whatsapp.com/send?phone=+40767676712"><button
+                        <a href="https://api.whatsapp.com/send?phone=+40767676712" title="Scrie-ne pe whatsapp"><button
                                 class="action-button">Contactează-ne</button></a>
 
                         <div>
@@ -446,7 +446,7 @@
 
                             <h3>Sfaturi și sugestii</h3>
                             <div id="controls">
-                                <a href="/sfaturi">Mai multe</a>
+                                <a href="/sfaturi" title="Sfaturi">Mai multe</a>
                                 <div>
                                     <span class="icon-arrow" onclick="bindPrevArticle()"></span>
                                     <span class="icon-arrow" onclick="bindNextArticle()"></span>
@@ -479,7 +479,7 @@
                                                                 <p>
                                                                     <%=continut.div[1].p%>
                                                                 </p>
-                                                                <a href="/sfaturi/<%=articles[i].id2%>">Citește mai
+                                                                <a href="/sfaturi/<%=articles[i].id2%>" title="<%=continut.div[0].h2%>">Citește mai
                                                                     mult</a>
                                                         </div>
                                                         <%}%>
@@ -492,7 +492,7 @@
 
                     <script src="/mobile/scripts/partials-25042021.js"></script>
                     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-                    <script src="/mobile/scripts/index-25022021.js"></script>
+                    <script src="/mobile/scripts/index-30012022.js"></script>
 </body>
 
 </html>
